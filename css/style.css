@@ -1,0 +1,87 @@
+.totals{
+  background-image:url('../images/img1.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  height:250px;
+
+}
+
+.total{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#submit{
+  font-size:1.3em;
+  color:lightblue;
+}
+#submit:hover{
+  cursor:pointer;
+  color:blue;
+}
+
+select,input{
+  border:none;
+  outline:none;
+  background-color:transparent;
+}
+input{
+  /* Primary color */
+  border-bottom:1px solid #007bff 
+}
+
+.items ul {
+  list-style-type:none;
+}
+
+
+
+.item{
+  font-family: 'Oswald', sans-serif;
+}
+
+.select{
+  width:60px;
+}
+.trash{
+  /* danger color */
+  color:#da2323;
+  display:none;
+  cursor:pointer;
+}
+
+
+
+.amount-add{
+  color:#007bff;
+}
+
+.amount-sub{
+  color:#dc3545;
+}
+
+tr{
+  cursor:pointer;
+}
+tr:hover .trash{
+  display:inline;
+}
+
+
+#expenses td:last-child{
+  color:#dc3545;
+  float:right;
+}
+
+#income td:last-child{
+  color:#007bff ;
+  float:right;
+}
+
+.percentage,.item-percentage{
+  background-color:#ddd6d771;
+  font-size:0.6em;
+  display: inline-block;
+  padding:1px 5px;
+}

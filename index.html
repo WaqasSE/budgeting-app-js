@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/920c321641.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+  <title>Budgety</title>
+</head>
+
+<body>
+
+  <!-- Total Expenses and Income -->
+  <div class="container totals d-flex justify-content-center  text-light">
+    <div class="row">
+      <div class="col-12 ">
+        <div class="mt-3 d">
+          <div class="lead">Avaiable Budget in <span class="year font-weight-bold month-year"></span></div>
+          <!-- Total amount -->
+          <div class="display-3 text-center" id='total'>0</div>
+          <div class="row bg-primary total p-2">
+            <div class="col-5 pl-0">Income</div>
+            <div class="col-7 pl-5" id="total-income"></div>
+          </div>
+          <br>
+          <div class="row bg-danger total p-2">
+            <div class="col-5 pl-0">Expenses</div>
+            <div class="col-6 pl-5"><span id="total-expenses"></span>
+              <span class="percentage float-right">--</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Enter Expenses or Income -->
+  <div class="container ">
+    <div class="row bg-light p-2 ">
+      <div class="col-md-12  text-center">
+        <select class="custom-select select" name="type" id="">
+          <option value="+">+</option>
+          <option value="-">-</option>
+        </select>&nbsp;
+        <input type="text" id="inpItem" name="" id="" placeholder="Add Description" size="40">&nbsp;
+        <input type="number" id="inpAmount" name="" id="" placeholder="value">
+        <i class="far fa-check-circle mt-1" id="submit"></i>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Income and Expenses -->
+  <div class="container items " id="inc-expenses">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-5 ml-1">
+        <h5 class="text-primary">INCOME</h5>
+        <table class="table table-hover" id="income">
+
+        </table>
+
+      </div><br>
+      <div class="col-md-5 ml-1">
+        <h5 class="text-danger">EXPENSES</h5>
+        <table class="table table-hover" id="expenses">
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/controller.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
